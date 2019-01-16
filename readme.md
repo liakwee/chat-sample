@@ -17,3 +17,73 @@ This project is using Create React App(by facebook) to kickstart. It auto config
 # Recommended IDE
 
 [VSCode](https://code.visualstudio.com/)
+
+# JSX
+JSX is the syntax to add HTML into JS.
+React using JSX to render HTML on run-time
+
+```js
+  render() {
+    return (
+      <div>
+        <h1>Parent Chat</h1>
+        <button onClick={this.addChat}>Add</button>
+        <div className="chatlist">
+          {
+            this.state.chatID.map(id => 
+              <IFrameWindow
+                key={id}
+                uuid={id}
+                setRef={this.setRef}
+              />
+            )
+          }
+        </div>
+      </div>
+    );
+  }
+```
+
+# ES6
+### Arrow function
+```js
+componentDidMount = () => {
+  ...
+}
+```
+Reference: https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/
+
+---
+
+### Spread operator 
+```js
+{
+  chatID: [...this.state.chatID, uuid()]
+}
+```
+Reference: https://codeburst.io/javascript-es6-the-spread-syntax-f5c35525f754
+
+---
+
+### Array map
+
+```js
+chatRef.map(iframe => {
+  iframe.contentWindow.postMessage(this.state.message);
+})
+```
+Reference: https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+
+---
+
+### String Literal (Template Strings)
+
+```js
+// Simple string substitution
+const name = "Brendan";
+console.log(`Yo, ${name}!`);
+
+// => "Yo, Brendan!"
+```
+
+---

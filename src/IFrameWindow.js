@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class IFrameWindow extends Component {
-  render() {
-    const uuid = this.props.uuid
-    console.log('uuid: ', uuid);
-    return(
-      <iframe key={uuid} src={`./chat?id=${uuid}`} width="500" height="400" ref={this.props.setRef} />
-    )
-  }
-}
+/*
+  This is a react dumb component.
+  It reduce the over head of extending React component.
+
+  uuid & setRef are props passing in from the parent component
+*/
+
+const IFrameWindow = ({ uuid, setRef }) => {
+  return (
+    <iframe key={uuid} src={`./chat`} width="500" height="400" ref={setRef} />
+  );
+};
 
 export default IFrameWindow;

@@ -1,34 +1,72 @@
-h1, p {
-  font-family: Lato;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial;
+}
+
+
+#root,
+.chat-window {
+  height: 100%;
+  width: 100%;
 }
 
 form {
   margin: 0;
+  padding: 0;
+  height: 10%;
 }
 
 .chat-window h1{
-  font-family: Lato;
-  height: 20%;
+  height: 10%;
   margin: 0;
+  font-size: 1rem;
 }
 
 .message-list {
-  height: 70%;
+  height: 80%;
   background-color: #ccc;
   overflow: scroll;
 }
 
 .msg-input {
-  height: 10%;
+  height: 100%;
   width: 80%;
+  padding: 10px;
 }
 
 .msg-send {
   width: 20%;
-  height: 8%;
+  height: 100%;
 }
+
+span.self {
+  display: inline-block;
+  float: right;
+  color: #333;
+  text-decoration: underline;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
