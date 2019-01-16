@@ -7,3 +7,13 @@ This project is using Create React App(by facebook) to kickstart. It auto config
 3. Run `npm install` to install all the dependencies for this project
 4. Run `npm start` to start development
 5. Run `npm build` for production
+
+# Libraries used
+1. React (v16.5.0)
+2. React-router (v4.3.1) - This is for routing the client chat URL that is use in the iframe
+3. Nick generator (v1.0.1) - This is used for generating fancy name for the chat user
+4. UUID (v3.3.2) - This is used to create unique ID for the chat window
+
+# Recommended IDE
+
+[VSCode](https://code.visualstudio.com/)

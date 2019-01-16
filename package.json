@@ -5,8 +5,8 @@
   "dependencies": {
     "react": "16.5.0",
     "react-dom": "16.5.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,9 +15,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "nick-generator": "^1.0.1",
+    "nick-generator": "1.0.1",
     "react-scripts": "latest",
-    "uuid": "^3.3.2"
+    "uuid": "3.3.2"
   },
   "browserslist": [
     ">0.2%",
